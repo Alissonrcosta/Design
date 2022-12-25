@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+
+}
+.logoimg {
+    width: 100px;
+    height: 90px;
+    background-color: #6d258b;
+
+}
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid #000000;
+}
+
+.menu li a:hover,
+.menu .active a{
+    border-bottom: 3px solid #6d258b;
+    color: #CCC;
+}
+
+.banner{/*area disponivel do banner*/
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover; /*ajusta o tamanho de forma que ela preencha todo o espaço */
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders{ /*tem que ter a largura de todos os slides juntos*/
+    width: 1000vw;
+    height: 100%;
+    ;
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.6);
+}
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h1 span{
+    
+    color: #6d258b;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+.banner a {
+    display: block;
+    background-color: #6d258b;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding:  10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    
+    position: absolute;
+    margin-top: -250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #6d258b;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active{
+    background-color: #6d258b;
+}
